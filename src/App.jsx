@@ -1,6 +1,7 @@
 
 //mandatory  إلزامي    ماندَتاري 
-
+// https://vercel-frontend-alpha-dun.vercel.app/
+// https://vercel-backend-265q.vercel.app/
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./LoginPage";

@@ -12,6 +12,7 @@ export default function ChangePasswordPage() {
   const [newPassword, setNewPassword] = useState("");
   const [confirm, setConfirm] = useState("");
   const [msg, setMsg] = useState("");
+ const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const handleChangePassword = async (e) => {
     e.preventDefault();
@@ -23,7 +24,7 @@ export default function ChangePasswordPage() {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/change-password", {
+      const res = await axios.post(`${backendUrl}/api/auth/change-password`,  {
         email,
        oldPassword,
         newPassword,
