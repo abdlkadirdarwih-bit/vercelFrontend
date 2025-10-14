@@ -27,7 +27,7 @@ export default function LoginPage() {
   return (
     <div className="containerlogin">
       <form className="form-box" onSubmit={handleLogin}>
-        <h2>Login</h2>
+        <h2>Login school</h2>
         <input
           type="email"
           placeholder="Enter Email"
