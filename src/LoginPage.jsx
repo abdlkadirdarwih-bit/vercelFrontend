@@ -14,8 +14,11 @@ const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const handleLogin = async (e) => {
     e.preventDefault();
     setMsg("");
+    // 'http://localhost:3001/'
     try {
-      const res = await axios.post(`${backendUrl}/api/auth/login`, {
+      // const res = await axios.post('http://localhost:5000/api/auth/login', {
+              const res = await axios.post(`${backendUrl}/api/auth/login`, {
+        
         email,
         password,
       });

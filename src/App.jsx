@@ -1,5 +1,7 @@
 
 //mandatory  إلزامي    ماندَتاري 
+//Pending  قيد الانتظار   باندينغ
+
 // https://vercel-frontend-alpha-dun.vercel.app/
 // https://vercel-backend-265q.vercel.app/
 import './App.css'
