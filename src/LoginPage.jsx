@@ -9,7 +9,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
   const navigate = useNavigate();
-const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -17,8 +17,7 @@ const backendUrl = import.meta.env.VITE_BACKEND_URL;
     // 'http://localhost:3001/'
     try {
       // const res = await axios.post('http://localhost:5000/api/auth/login', {
-              const res = await axios.post(`${backendUrl}/api/auth/login`, {
-        
+      const res = await axios.post(`${backendUrl}/api/auth/login`, {
         email,
         password,
       });
@@ -31,7 +30,7 @@ const backendUrl = import.meta.env.VITE_BACKEND_URL;
   return (
     <div className="containerlogin">
       <form className="form-box" onSubmit={handleLogin}>
-        <h2>Login </h2>
+        <h2>.Login </h2>
         <input
           type="email"
           placeholder="Enter Email"
